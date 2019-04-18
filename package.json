@@ -1,0 +1,27 @@
+{
+  "name": "huntthewumpus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:coverage": "yarn jest --coverage",
+    "sonar": "sonar-scanner",
+    "start": "ts-node src/interface/console/index.ts",
+    "tslint": "tslint --fix --type-check --project tsconfig.json -c tslint.json 'src/**/*.ts'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/blessed": "^0.1.11",
+    "blessed": "^0.1.81",
+    "tslint": "^5.15.0",
+    "tslint-sonarts": "^1.9.0",
+    "typescript": "^3.3.3333"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "jest": "^24.5.0",
+    "jest-sonar-reporter": "^2.0.0",
+    "ts-jest": "^24.0.0"
+  }
+}
